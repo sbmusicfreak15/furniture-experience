@@ -1,3 +1,62 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-color: #808a9f;
+}
+
+h1 {
+  font-family: Courier;
+  color: #808a9f;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+font-family: Helvetica;
+font-size: 1.2em;
+}
+
+// header
+
+.topbar li {
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav {
+  background-color: #dac9b2;
+  color: white;
+}
+
+.item {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  font-family: Courier;
+}
+
+// Footer
+
+footer {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    height: 30px;
+    background-color: #3d4656;
+    color: white;
+  }
+
+// index page image
+
+// About page image
+
+section {
+  display: inline;
+}
