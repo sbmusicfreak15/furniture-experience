@@ -9,16 +9,24 @@ body {
 h1 {
   font-family: Courier;
   color: #808a9f;
-  text-align: center;
+  margin-left: 50px;
+  word-spacing: 1.2;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-style: italic;
+  ;
 }
 
 h2 {
-  text-align: center;
+  margin-left: 75px;
+  word-spacing: 1.2;
+  letter-spacing: 2px;
+  font-style: italic;
 }
 
 p {
-font-family: Helvetica;
-font-size: 1.2em;
+  font-family: Helvetica;
+  font-size: 1.2em;
 }
 
 // header
@@ -26,6 +34,7 @@ font-size: 1.2em;
 .topbar li {
   display: inline-block;
   text-decoration: none;
+
 }
 
 nav {
@@ -53,10 +62,52 @@ footer {
     color: white;
   }
 
-// index page image
+// index page
 
-// About page image
+// index-images
+
+.img1 {
+  height: 250px;
+  width: 22%;
+  margin-left: 1300px;
+}
+
+.img2 {
+  height: 250px;
+  width: 22%;
+  margin-left: 75px;
+  margin-top: 200px;
+  display: inline-block;
+}
+
+.img3{
+  height: 250px;
+  width: 22%;
+  margin-left: 200px;
+}
+
+.lowertext {
+  margin-left: 750px;
+  float: right;
+}
+
+// About page
+
+.info {
+  height: 250px;
+  width: 22%;
+  margin-left: 700px;
+}
+
+p {
+  font-style: italic;
+  font-weight: 600;
+}
+
+// About page images
 
 .about {
-  display: inline;
+  float: left;
+  margin-top: 150px;
+  margin-right: 250px;
 }
