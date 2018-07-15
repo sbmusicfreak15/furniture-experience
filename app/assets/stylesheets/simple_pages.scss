@@ -9,7 +9,10 @@ h1 {
   letter-spacing: 2px;
   font-weight: bold;
   font-style: italic;
-  ;
+  @media(max-width: 768px){
+    position: relative;
+    text-align: center;
+  }
 }
 
 h2 {
@@ -22,6 +25,10 @@ h2 {
 p {
   font-family: Helvetica;
   font-size: 1.2em;
+  @media(max-width: 768px){
+    position: relative;
+    right: 350px;
+  }
 }
 
 // header
@@ -47,6 +54,13 @@ footer {
     height: 30px;
     background-color: #3d4656;
     color: white;
+    @media(max-width: 768px){
+      position: relative;
+      width: 100%;
+      height: 30px;
+      background-color: #3d4656;
+      color: white;
+    }
   }
 
 // index page
@@ -63,6 +77,9 @@ footer {
   margin-left: 1300px;
   @media(max-width: 768px){
     position: relative;
+    height: 800px;
+    width:100%;
+    right: 1150px;
   }
 }
 
@@ -73,6 +90,14 @@ footer {
   left: 75px;
   top: 400px;
   border: 3px solid #808a9f;
+  @media(max-width: 768px){
+    position: relative;
+    height: 800px;
+    width:100%;
+    top: auto;
+    left: 150px;
+    right: 200px;
+  }
 }
 
 .img3{
@@ -82,6 +107,13 @@ footer {
   left: 700px;
   top: 200px;
   border: 3px solid #808a9f;
+  @media(max-width: 768px){
+    position: relative;
+    height: 800px;
+    width:100%;
+    top: auto;
+    left: 150px;
+  }
 }
 
 .lowertext {
@@ -109,4 +141,10 @@ p {
   margin-top: 100px;
   margin-right: 250px;
   width: 50%;
+  @media(max-width: 768px){
+    position: relative;
+    height: 800px;
+    width:100%;
+    left: 350px;
+  }
 }
