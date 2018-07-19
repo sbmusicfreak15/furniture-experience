@@ -1,9 +1,8 @@
 
-
-<p id="notice"><%= notice %></p>
+ <p id="notice"><%= notice %></p>
 
 <h1 id="products">Products</h1>
-
+<!--
 <table>
   <thead>
     <tr>
@@ -36,15 +35,15 @@
 
 <%= link_to 'New Product', new_product_path, class: "new_product" %>
 
-
-
+-->
 <div class="container-fluid">
   <div class="row">
     <% @products.each do |product| %>
-      <div class="col-sm">
-        <a href="#"><h1><%= product.name  %></h1></a>
-        <p><%= product.description %></p>
-        <p>$<%= product.price %></p>
+      <div class="col-sm" id="prod_img">
+        <td><%= image_tag(product.image_url, class: "img-responsive", id: "img_size") if product.image_url %></td>
+        <a href="#"><h3><%= product.name  %></h3></a>
+        <h4><%= product.description %><h4>
+        <h5>$<%= product.price %><h5>
       </div><!-- /col -->
     <% end %>
   </div>

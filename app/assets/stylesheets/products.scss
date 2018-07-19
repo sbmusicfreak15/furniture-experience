@@ -12,5 +12,29 @@ table {
 
 .new_product {
   font-size: 1.3em;
-  text-decoration: none;
+}
+
+#prod_img {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+#img_size {
+  height: 225px;
+  width: 65%;
+  margin-top: 50px;
+}
+
+h3 {
+  font-size: 1.4em;
+  text-decoration: underline;
+  padding-bottom: 15px;
+}
+
+h4 {
+  padding-bottom: 5px;
+}
+
+#products {
+  margin-top: 75px;
 }
