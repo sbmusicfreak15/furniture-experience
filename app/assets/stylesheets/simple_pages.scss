@@ -1,9 +1,10 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+//808a94
 h1 {
   font-family: Courier;
-  color: #808a9f;
+  color: #3d4656;
   margin-left: 50px;
   word-spacing: 1.2;
   letter-spacing: 2px;
@@ -25,7 +26,8 @@ h2 {
 p {
   font-family: Helvetica;
   font-size: 1.5em;
-  line-height: 2.8;
+  font-style: italic;
+  font-weight: 600;
   @media(max-width: 768px){
     position: relative;
     right: 700px;
@@ -50,8 +52,8 @@ ul {
 
 footer {
     bottom: 0;
-    width: 100%;
     position: absolute;
+    width: 100%;
     height: 30px;
     background-color: #3d4656;
     color: white;
@@ -116,31 +118,27 @@ footer {
   }
 }
 
-.lowertext {
-  margin-left: 750px;
-  float: right;
-}
-
 // About page
 
 .info {
-  height: 250px;
-  width: 22%;
+  height: 50px;
+  width: 50%;
   margin-left: 700px;
+  margin-top: 75px;
+  margin-bottom: 25px;
 }
 
-p {
-  font-style: italic;
-  font-weight: 600;
+.info p {
+  line-height: 2.3;
 }
 
 // About page images
 
 .about {
   float: left;
-  margin-top: 100px;
   margin-right: 250px;
   width: 50%;
+  padding-bottom: 255px;
   @media(max-width: 768px){
     position: relative;
     height: 800px;
@@ -152,11 +150,21 @@ p {
 // Contact Page
 
 .contact_me {
-  padding-bottom: 525px;
+  padding-bottom: 750px;
 }
 
 .contact_list {
   font-style: italic;
   color: #808a9f;
   font-weight: bold;
+}
+
+// Landing page
+
+.carimg {
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 75%;
+  height: 50%;
+  padding-left: 500px;
 }

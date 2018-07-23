@@ -7,7 +7,7 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Desription</th>
+      <th>Description</th>
       <th>Image url</th>
       <th>Color</th>
       <th>Price</th>
@@ -39,12 +39,7 @@
 <div class="container-fluid">
   <div class="row">
     <% @products.each do |product| %>
-      <div class="col-sm" id="prod_img">
-        <td><%= image_tag(product.image_url, class: "img-responsive", id: "img_size") if product.image_url %></td>
-        <a href="#"><h3><%= product.name  %></h3></a>
-        <h4><%= product.description %><h4>
-        <h5>$<%= product.price %><h5>
-      </div><!-- /col -->
+    <%= render partial: "product", locals: {product: product} %>
     <% end %>
   </div>
 </div>
