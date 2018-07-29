@@ -1,0 +1,15 @@
+#prod_img {
+  display: inline-block;
+  margin-left: 40px;
+  height: 225px;
+  width: 25%;
+  margin-top: 50px;
+}
+
+.order_desc p {
+  margin-left: 50px;
+}
+
+.order_desc {
+  margin-bottom: 100px;
+}

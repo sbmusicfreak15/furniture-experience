@@ -17,12 +17,20 @@ table {
 #prod_img {
   display: inline-block;
   margin-left: 40px;
+  height: 225px;
+  width: 25%;
+  margin-top: 50px;
+  @media(max-width: 768px){
+    position: relative;
+    height: 225px;
+    width: auto;
+    left: 0;
+  }
 }
 
 #img_size {
   height: 225px;
-  width: 65%;
-  margin-top: 50px;
+
 }
 
 h3 {
