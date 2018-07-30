@@ -1,6 +1,6 @@
   <div class="col-sm" id="prod_img">
     <%= image_tag(product.image_url, class: "img-responsive", id: "img_size") if product.image_url %>
-    <a href="#"><h3><%= product.name  %></h3></a>
+    <a href="products/<%= product.id %>"><h3><%= product.name  %></h3></a>
     <h4><%= product.description %></h4>
     <h5>$<%= product.price %></h5>
   </div><!-- /col -->
