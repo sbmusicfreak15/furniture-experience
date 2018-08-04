@@ -47,11 +47,20 @@ h4 {
   margin-top: 75px;
 }
 
+// Search bar styling
+
 .text {
   color: black;
   font-family: Courier;
 }
 
 .field {
-  border-radius: 40px;
+  border-radius: 10px;
+  width: 15%;
+}
+
+// Contact form styling
+
+.contact_form {
+  padding-left: 20px;
 }
