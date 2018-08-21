@@ -10,4 +10,8 @@ class Product < ApplicationRecord
     comments.rating_desc.pluck(:rating).first
   end
 
+  def lowest_rating_comment
+    comments.rating_desc.pluck(:rating).last
+  end
+
 end

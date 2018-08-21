@@ -22,8 +22,12 @@
       <%= @product.price %>
     </h2>
 
-    <h2>
+    <h2 class="rating">
       Highest Rating:<%= @product.highest_rating_comment %>
+    </h2>
+
+    <h2>
+      Lowest Rating:<%= @product.lowest_rating_comment %>
     </h2>
 
     <%= link_to 'Edit', edit_product_path(@product) %> |
