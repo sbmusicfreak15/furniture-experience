@@ -14,4 +14,8 @@ class Product < ApplicationRecord
     comments.rating_desc.pluck(:rating).last
   end
 
+  def average_rating
+    comments.average(:rating).to_f
+  end
+
 end
