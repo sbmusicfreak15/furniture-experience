@@ -6,6 +6,10 @@
   text-align: center;
 }
 
+.search_text {
+  font-family: "Open Sans";
+}
+
 table {
   font-size: 1.3em;
 }
@@ -19,7 +23,7 @@ table {
   margin-left: 40px;
   height: 225px;
   width: 25%;
-  margin-top: 50px;
+  margin-bottom: 150px;
   @media(max-width: 768px){
     position: relative;
     height: 225px;
@@ -34,8 +38,6 @@ table {
 }
 
 h3 {
-  font-size: 1.4em;
-  text-decoration: underline;
   padding-bottom: 15px;
 }
 
@@ -51,7 +53,6 @@ h4 {
 
 .text {
   color: black;
-  font-family: Courier;
 }
 
 .border {
@@ -59,7 +60,7 @@ h4 {
   @media(max-width: 768px){
     position: relative;
     width: 90%;
-  } 
+  }
 
 }
 
@@ -111,4 +112,8 @@ h4 {
 
 .comment_make {
 margin-left: auto;
+}
+
+.text-dec {
+  text-decoration: none;
 }

@@ -29,9 +29,9 @@
         <% end %>
       </ul>
       <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
-        <%= form.label :q, 'Search for:', class: 'text' %>
+        <%= form.label :q, 'Search for:', class: "search_text" %>
         <%= form.text_field :q, id: 'q', value: params[:q], class: 'field' %>
-        <%= form.submit 'Search', class: 'text' %>
+        <%= form.submit 'Search', class: "search_text" %>
         <i class="fas fa-search"></i>
       <% end %>
     </div><!-- end collapse navbar-collapse -->

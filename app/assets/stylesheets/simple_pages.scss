@@ -2,8 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 //808a94
+a {
+  font-family: "Open Sans";
+}
+
 h1 {
-  font-family: Courier;
+  font-family: "Open Sans";
   color: #3d4656;
   margin-left: 50px;
   word-spacing: 1.2;
@@ -25,7 +29,7 @@ h2 {
 }
 
 p {
-  font-family: Helvetica;
+  font-family: "Open Sans";
   font-size: 1.5em;
   font-style: italic;
   font-weight: 600;
@@ -46,7 +50,7 @@ p {
 }
 
 ul {
-  font-family: Courier;
+  font-family: "Open Sans";
 }
 
 // Footer
@@ -116,29 +120,21 @@ footer {
 
 // About page
 
-.info {
-  height: 50px;
-  width: 50%;
-  margin-left: 700px;
-  margin-top: 75px;
-  margin-bottom: 25px;
-}
+
 
 .info p {
   line-height: 2.3;
 }
 
 // About page images
+.about_us {
+    padding-bottom: 200px;
+}
 
 .about {
-  float: left;
-  margin-right: 250px;
-  width: 50%;
-  padding-bottom: 255px;
+  margin-top: 100px;
   @media(max-width: 768px){
-    position: relative;
-    width:70%;
-    margin-left: 50px;
+    margin-left: 700px;
   }
 }
 
@@ -161,6 +157,10 @@ footer {
 
 .carimg {
   background-size: contain;
+}
+
+#featured {
+  color: white;
 }
 
 // Login
