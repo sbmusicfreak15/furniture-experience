@@ -25,6 +25,7 @@ table {
     height: 225px;
     width: auto;
     left: 0;
+    margin-bottom:250px;
   }
 }
 
@@ -54,12 +55,11 @@ h4 {
 }
 
 .border {
-  border-radius: 10px;
-  width: 15%;
+  width: 35%;
   @media(max-width: 768px){
     position: relative;
     width: 90%;
-  }
+  } 
 
 }
 

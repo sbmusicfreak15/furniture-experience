@@ -1,4 +1,4 @@
-  <div class="col-sm" id="prod_img">
+  <div class="col-md-3 col-xs-12" id="prod_img">
     <%= image_tag(product.image_url, class: "img-responsive", id: "img_size") if product.image_url %>
     <a href="products/<%= product.id %>"><h3><%= product.name  %></h3></a>
     <h4><%= product.description %></h4>

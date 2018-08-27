@@ -7,6 +7,10 @@ class ProductsController < ApplicationController
     if params[:q]
       search_term = params[:q]
       @products = Product.search(search_term)
+      if @products.nil?
+        flash[:alert].now = "Sorry, nothing matched #{search_term}. Try these instead!"
+        @products = Project.all
+      end
     else
       @products = Product.all
     end
