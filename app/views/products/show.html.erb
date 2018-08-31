@@ -25,10 +25,9 @@
     <h2>
       Lowest Rating:<%= @product.lowest_rating_comment %>
     </h2> -->
-
-    <div class="btn btn-default">
-      <%= link_to 'Edit', edit_product_path(@product) %>
-    </div> |
+    <% if !signed_in? %>
+    <p><%= link_to('Login', new_user_session_path, class: "nav-link") %> to post a review!</p>
+    <% end %>
     <div class="btn btn-default">
       <%= link_to 'Back', products_path %>
     </div>
