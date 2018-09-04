@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   resources :products do
     resources :comments
   end
-
+  
+  resources :users
+  resources :products
   get 'simple_pages/abouot'
   get 'simple_pages/contact'
   root 'simple_pages#landing_page'
