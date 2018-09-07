@@ -11,7 +11,7 @@ class PaymentsController < ApplicationController
         amount: product.price, # amount in cents, again
         currency: "usd",
         source: token,
-        description: params[:stripeEmail]
+        description: params[:stripeEmail],
         receipt_email: 'email'
       )
       if charge.paid
