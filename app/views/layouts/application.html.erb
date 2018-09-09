@@ -26,8 +26,16 @@
 
     <%= yield %>
 
-    <footer>
-        <p class="footer-block">&copy; <%= Date.today.year %> Furniture Experience</p>
-    </footer>
+    <div class="footer">
+      <div class="ad-left">
+        &copy; <%= Date.today.year %> Furniture Experience
+
+      </div>
+      <div class="ad-right">
+        <%= social_share_button_tag("My Site") %>
+      </div>
+      <div class="clear">
+      </div>
+    </div>
   </body>
 </html>

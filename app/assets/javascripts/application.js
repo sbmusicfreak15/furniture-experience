@@ -14,5 +14,6 @@
 //= require activestorage
 //= require turbolinks
 //= require jquery3
+//= require social-share-button
 //= require_tree .
 //= require jquery.raty.js
