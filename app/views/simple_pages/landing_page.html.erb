@@ -1,4 +1,4 @@
-<h1>Featured Product</h1>
+<h1>Featured Products</h1>
 
 <!-- <p><%= if defined?(@featured_product) && (@featured_product != '') then  @featured_product.name  end %></p> -->
 
@@ -10,7 +10,6 @@
   </ol>
   <div class="carousel-inner">
     <% @products.each do |product| %>
-      <% logger.debug "Item before increment: #{product.name}" %>
     <div class="item<%= " active" if product == @products.first %>">
         <%= image_tag(product.image_url, class: "carimg") %>
       <div class="carousel-caption d-none d-md-block">
@@ -18,7 +17,6 @@
       </div>
     </div>
     <% end %>
-    <% logger.debug "Item after increment: #{@products.name}" %>
   </div>
 
   <a class="left carousel-control" href="#carouselExampleIndicatorsc" data-slide="prev">
