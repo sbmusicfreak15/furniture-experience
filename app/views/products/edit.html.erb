@@ -1,12 +1,14 @@
-<div class="container-fluid">
-  <h1>Editing Product</h1>
+<% if current_user && current_user.admin? %>
+  <div class="container-fluid">
+    <h1>Editing Product</h1>
 
-  <%= render 'form', product: @product %>
+    <%= render 'form', product: @product %>
 
-  <div class="btn btn-default">
-    <%= link_to 'Show', @product %>
-  </div> |
-  <div class="btn btn-default">
-    <%= link_to 'Back', products_path %>
-  </div>  
-</div>
+    <div class="btn btn-default">
+      <%= link_to 'Show', @product %>
+    </div> |
+    <div class="btn btn-default">
+      <%= link_to 'Back', products_path %>
+    </div>
+  </div>
+<% end %>

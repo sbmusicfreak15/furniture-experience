@@ -15,4 +15,16 @@ $(document).on('turbolinks:load', function(){
       return $(this).attr('data-score');
     }
   });
+
+  $('.zoom_01').elevateZoom({
+    zoomWindowHeight: 400,
+    zoomWindowWidth: 400,
+    zoomWindowFadeIn: 500,
+    zoomWindowFadeOut: 500,
+    lensFadeIn: 500,
+    lensFadeOut: 500,
+    zoomWindowPosition: 9,
+    scrollZoom: true    
+
+});
 });
