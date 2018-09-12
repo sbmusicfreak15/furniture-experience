@@ -32,7 +32,7 @@
       <%= link_to 'Back', products_path %>
     </div>
   </div> <!-- end show -->
-  <div class="col-md-12 col-xs-12" id="new_comment">
+  <div class="col-md-12 col-xs-12" id="comment_make">
     <%= render 'new_comment' %>
     <%= form_with(url: '/payments/create') do |form| %>
     <%= render partial: "partials/stripe_checkout_button" %>

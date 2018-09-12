@@ -1,8 +1,8 @@
 <div class="container comment_make">
-  <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+  <p>Average Rating: <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div> </p>
   <% if signed_in? %>
     <h4>Add a review:</h4>
-    <%= form_for([@product, @product.comments.build]) do |f| %>
+    <%= form_for([@product, @product.comments.build], remote: true) do |f| %>
       <p>
         <%= f.label :body, "Comments" %><br>
         <%= f.text_area :body %>
