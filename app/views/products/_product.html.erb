@@ -1,8 +1,10 @@
-<div class="card col-md-4 col-xs-12" id="prod_img">
-  <a href="products/<%= product.id %>"><%= image_tag(product.image_url, class: "img-responsive card-img-top", id: "img_size") if product.image_url %></a>
-  <div class="card-body">
-    <a href="products/<%= product.id %>"><h3><%= product.name %></h3></a>
-    <h4 class="card-text"><%= product.description %></h4>
-    <h5 class="card-text"><%= number_to_currency(product.price) %></h5>
+<% cache product do %>
+  <div class="card col-md-4 col-xs-12" id="prod_img">
+    <a href="products/<%= product.id %>"><%= image_tag(product.image_url, class: "img-responsive card-img-top", id: "img_size") if product.image_url %></a>
+    <div class="card-body">
+      <a href="products/<%= product.id %>"><h3><%= product.name %></h3></a>
+      <h4 class="card-text"><%= product.description %></h4>
+      <h5 class="card-text"><%= number_to_currency(product.price) %></h5>
+    </div>
   </div>
-</div>
+<% end %>

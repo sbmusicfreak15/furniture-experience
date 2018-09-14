@@ -1,12 +1,11 @@
-
-<h1>About us</h1>
-
-
-<div class="container">
-    <div class="abt_img">
-      <%= image_tag("couch3.jpg", class: "img-responsive") %>
-    </div><!-- end abt_img -->
-    <div class="col-lg-6 col-xs-12 about">
-      <p>We started out as a small online business and have been growing rapidly, due to our fine attention to detail and excellent shopping experience, from start to finish. We take pride in offering only the best quality, and we've done all of the researching for you. We encourage you to shop with ease, knowing that whatever you purchase comes backed by our guarantee</p>
-    </div><!-- end info -->
-</div><!-- end container -->
+<% cache do %>
+  <h1>About us</h1>
+<% end %>
+  <div class="container">
+      <div class="abt_img">
+        <%= image_tag("couch3.jpg", class: "img-responsive") %>
+      </div><!-- end abt_img -->
+      <div class="col-lg-6 col-xs-12 about">
+        <p>We started out as a small online business and have been growing rapidly, due to our fine attention to detail and excellent shopping experience, from start to finish. We take pride in offering only the best quality, and we've done all of the researching for you. We encourage you to shop with ease, knowing that whatever you purchase comes backed by our guarantee</p>
+      </div><!-- end info -->
+  </div><!-- end container -->
