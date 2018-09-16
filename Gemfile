@@ -29,7 +29,8 @@ gem 'cancancan', '~> 2.0'
 gem 'stripe'
 gem 'rails-controller-testing'
 gem 'social-share-button', '~> 1.1'
-gem "brakeman"
+gem 'brakeman'
+gem 'dalli'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
